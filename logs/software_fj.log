@@ -1,0 +1,150 @@
+2026-11-20 12:11:06,508 - INFO - Cliente C001 registrado correctamente.
+2026-11-20 12:11:06,508 - INFO - Servicio S001 creado correctamente.
+2026-11-20 12:11:06,508 - INFO - Reserva R001 creada correctamente.
+2026-11-20 12:11:06,508 - INFO - Reserva R001 confirmada.
+2026-11-20 12:11:06,509 - INFO - Reserva R001 procesada. Costo: $100,000.00
+2026-11-20 12:11:06,509 - INFO - Finalizó la ejecución del programa.
+2026-11-20 12:15:38,830 - INFO - Operacion 1: Cliente registrado correctamente.
+2026-11-20 12:15:38,831 - ERROR - Operacion 2: El correo electrónico no es válido.
+2026-11-20 12:15:38,831 - INFO - Operacion 3: Sala creada correctamente.
+2026-11-20 12:15:38,854 - ERROR - Operacion 4: La capacidad de la sala debe ser positiva.
+2026-11-20 12:15:38,854 - INFO - Operacion 5: Alquiler de equipos creado.
+2026-11-20 12:15:38,855 - INFO - Operacion 6: Asesoria creada correctamente.
+2026-11-20 12:15:38,855 - INFO - Operacion 7: Reserva creada correctamente.
+2026-11-20 12:15:38,856 - INFO - Operacion 8: Reserva procesada. Costo: $107,100.00
+2026-11-20 12:15:38,856 - ERROR - Operacion 9: La cantidad de personas supera la capacidad de la sala.
+2026-11-20 12:15:38,856 - ERROR - Operacion 10: Solo se pueden confirmar reservas pendientes.
+2026-11-20 12:15:38,856 - INFO - Todas las pruebas finalizaron correctamente.
+2026-11-20 12:15:38,857 - INFO - Finalizo la ejecucion del programa.
+2026-11-20 12:17:42,814 - INFO - Operacion 1: Cliente registrado.
+2026-11-20 12:17:42,815 - ERROR - Operacion 2: El correo electrónico no es válido.
+2026-11-20 12:17:42,815 - INFO - Operacion 3: Sala creada.
+2026-11-20 12:17:42,815 - ERROR - Operacion 4: La capacidad de la sala debe ser positiva.
+2026-11-20 12:17:42,816 - INFO - Operacion 5: Alquiler creado.
+2026-11-20 12:17:42,816 - INFO - Operacion 6: Asesoria creada.
+2026-11-20 12:17:42,816 - INFO - Operacion 7: Reserva creada.
+2026-11-20 12:17:42,816 - INFO - Operacion 8: Reserva procesada. Costo: $107,100.00
+2026-11-20 12:17:42,816 - ERROR - Operacion 9: La cantidad de personas supera la capacidad de la sala.
+2026-11-20 12:17:42,816 - ERROR - Operacion 10: Solo se pueden confirmar reservas pendientes.
+2026-11-20 12:17:42,817 - ERROR - Operacion 11: La cantidad de personas supera la capacidad de la sala.
+2026-11-20 12:17:42,817 - ERROR - Operacion 12: Excepcion encadenada durante el procesamiento.
+Traceback (most recent call last):
+  File "C:\Users\samue\OneDrive\Documentos\Software_FJ\reservas.py", line 79, in procesar
+    self._costo = self._servicio.calcular_costo(
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._duracion,
+        ^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        impuesto
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\OneDrive\Documentos\Software_FJ\servicios.py", line 91, in calcular_costo
+    return self._calcular_total(subtotal, descuento, impuesto)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\OneDrive\Documentos\Software_FJ\servicios.py", line 43, in _calcular_total
+    raise ServiceError("El descuento debe estar entre 0 y 1.")
+excepciones.ServiceError: El descuento debe estar entre 0 y 1.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\samue\OneDrive\Documentos\Software_FJ\main.py", line 150, in ejecutar_pruebas
+    reserva_prueba.procesar(descuento=1.5)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\samue\OneDrive\Documentos\Software_FJ\reservas.py", line 87, in procesar
+    raise ReservationError(
+        "No fue posible procesar el costo de la reserva."
+    ) from error
+excepciones.ReservationError: No fue posible procesar el costo de la reserva.
+2026-11-20 12:17:42,844 - INFO - Operacion 13: Reserva cancelada correctamente.
+2026-11-20 12:17:42,844 - INFO - Todas las pruebas finalizaron.
+2026-11-20 12:17:42,845 - INFO - Finalizo la ejecucion del programa.
+2026-11-20 12:22:00,406 - INFO - Operacion 1: Cliente registrado.
+2026-11-20 12:22:00,407 - ERROR - Operacion 2: El correo electrónico no es válido.
+2026-11-20 12:22:00,407 - INFO - Operacion 3: Sala creada.
+2026-11-20 12:22:00,407 - ERROR - Operacion 4: La capacidad de la sala debe ser positiva.
+2026-11-20 12:22:00,408 - INFO - Operacion 5: Alquiler creado.
+2026-11-20 12:22:00,408 - INFO - Operacion 6: Asesoria creada.
+2026-11-20 12:22:00,408 - INFO - Operacion 7: Reserva creada.
+2026-11-20 12:22:00,408 - INFO - Operacion 8: Reserva procesada. Costo: $107,100.00
+2026-11-20 12:22:00,408 - ERROR - Operacion 9: La cantidad de personas supera la capacidad de la sala.
+2026-11-20 12:22:00,408 - ERROR - Operacion 10: Solo se pueden confirmar reservas pendientes.
+2026-11-20 12:22:00,409 - ERROR - Operacion 11: La cantidad de personas supera la capacidad de la sala.
+2026-11-20 12:22:00,409 - ERROR - Operacion 12: Excepcion encadenada durante el procesamiento.
+Traceback (most recent call last):
+  File "C:\Users\samue\OneDrive\Documentos\Software_FJ\reservas.py", line 79, in procesar
+    self._costo = self._servicio.calcular_costo(
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._duracion,
+        ^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        impuesto
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\OneDrive\Documentos\Software_FJ\servicios.py", line 91, in calcular_costo
+    return self._calcular_total(subtotal, descuento, impuesto)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\OneDrive\Documentos\Software_FJ\servicios.py", line 43, in _calcular_total
+    raise ServiceError("El descuento debe estar entre 0 y 1.")
+excepciones.ServiceError: El descuento debe estar entre 0 y 1.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\samue\OneDrive\Documentos\Software_FJ\main.py", line 150, in ejecutar_pruebas
+    reserva_prueba.procesar(descuento=1.5)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\samue\OneDrive\Documentos\Software_FJ\reservas.py", line 87, in procesar
+    raise ReservationError(
+        "No fue posible procesar el costo de la reserva."
+    ) from error
+excepciones.ReservationError: No fue posible procesar el costo de la reserva.
+2026-11-20 12:22:00,411 - INFO - Operacion 13: Reserva cancelada correctamente.
+2026-11-20 12:22:00,411 - INFO - Todas las pruebas finalizaron.
+2026-11-20 12:22:00,411 - INFO - Finalizo la ejecucion del programa.
+2026-11-20 12:25:05,780 - INFO - Operacion 1: Cliente registrado.
+2026-11-20 12:25:05,781 - ERROR - Operacion 2: El correo electrónico no es válido.
+2026-11-20 12:25:05,781 - INFO - Operacion 3: Sala creada.
+2026-11-20 12:25:05,781 - ERROR - Operacion 4: La capacidad de la sala debe ser positiva.
+2026-11-20 12:25:05,781 - INFO - Operacion 5: Alquiler creado.
+2026-11-20 12:25:05,782 - INFO - Operacion 6: Asesoria creada.
+2026-11-20 12:25:05,782 - INFO - Operacion 7: Reserva creada.
+2026-11-20 12:25:05,782 - INFO - Operacion 8: Reserva procesada. Costo: $107,100.00
+2026-11-20 12:25:05,782 - ERROR - Operacion 9: La cantidad de personas supera la capacidad de la sala.
+2026-11-20 12:25:05,782 - ERROR - Operacion 10: Solo se pueden confirmar reservas pendientes.
+2026-11-20 12:25:05,782 - ERROR - Operacion 11: La cantidad de personas supera la capacidad de la sala.
+2026-11-20 12:25:05,783 - ERROR - Operacion 12: Excepcion encadenada durante el procesamiento.
+Traceback (most recent call last):
+  File "C:\Users\samue\OneDrive\Documentos\Software_FJ\reservas.py", line 92, in procesar
+    self._costo = self._servicio.calcular_costo(
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._duracion,
+        ^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        impuesto
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\OneDrive\Documentos\Software_FJ\servicios.py", line 122, in calcular_costo
+    return self._calcular_total(subtotal, descuento, impuesto)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\OneDrive\Documentos\Software_FJ\servicios.py", line 54, in _calcular_total
+    raise ServiceError("El descuento debe estar entre 0 y 1.")
+excepciones.ServiceError: El descuento debe estar entre 0 y 1.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\samue\OneDrive\Documentos\Software_FJ\main.py", line 160, in ejecutar_pruebas
+    reserva_prueba.procesar(descuento=1.5)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\samue\OneDrive\Documentos\Software_FJ\reservas.py", line 100, in procesar
+    raise ReservationError(
+        "No fue posible procesar el costo de la reserva."
+    ) from error
+excepciones.ReservationError: No fue posible procesar el costo de la reserva.
+2026-11-20 12:25:05,785 - INFO - Operacion 13: Reserva cancelada correctamente.
+2026-11-20 12:25:05,786 - INFO - Todas las pruebas finalizaron.
+2026-11-20 12:25:05,786 - INFO - Finalizo la ejecucion del programa.
